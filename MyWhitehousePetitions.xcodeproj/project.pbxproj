@@ -13,6 +13,7 @@
 		E0A51EA51E7AD23C002F6DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A51EA41E7AD23C002F6DE1 /* Assets.xcassets */; };
 		E0A51EA81E7AD23C002F6DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A51EA61E7AD23C002F6DE1 /* LaunchScreen.storyboard */; };
 		E0A51EB31E7AD23C002F6DE1 /* MyWhitehousePetitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A51EB21E7AD23C002F6DE1 /* MyWhitehousePetitionsTests.swift */; };
+		E0A51EBE1E7AD642002F6DE1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A51EBD1E7AD642002F6DE1 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E0A51EAE1E7AD23C002F6DE1 /* MyWhitehousePetitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWhitehousePetitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A51EB21E7AD23C002F6DE1 /* MyWhitehousePetitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWhitehousePetitionsTests.swift; sourceTree = "<group>"; };
 		E0A51EB41E7AD23C002F6DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A51EBD1E7AD642002F6DE1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				E0A51EA41E7AD23C002F6DE1 /* Assets.xcassets */,
 				E0A51EA61E7AD23C002F6DE1 /* LaunchScreen.storyboard */,
 				E0A51EA91E7AD23C002F6DE1 /* Info.plist */,
+				E0A51EBD1E7AD642002F6DE1 /* SwiftyJSON.swift */,
 			);
 			path = MyWhitehousePetitions;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A51EBE1E7AD642002F6DE1 /* SwiftyJSON.swift in Sources */,
 				E0A51EA01E7AD23C002F6DE1 /* ViewController.swift in Sources */,
 				E0A51E9E1E7AD23C002F6DE1 /* AppDelegate.swift in Sources */,
 			);
