@@ -14,6 +14,7 @@
 		E0A51EA81E7AD23C002F6DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A51EA61E7AD23C002F6DE1 /* LaunchScreen.storyboard */; };
 		E0A51EB31E7AD23C002F6DE1 /* MyWhitehousePetitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A51EB21E7AD23C002F6DE1 /* MyWhitehousePetitionsTests.swift */; };
 		E0A51EBE1E7AD642002F6DE1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A51EBD1E7AD642002F6DE1 /* SwiftyJSON.swift */; };
+		E0A51EC01E7ADF0B002F6DE1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A51EBF1E7ADF0B002F6DE1 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E0A51EB21E7AD23C002F6DE1 /* MyWhitehousePetitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWhitehousePetitionsTests.swift; sourceTree = "<group>"; };
 		E0A51EB41E7AD23C002F6DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0A51EBD1E7AD642002F6DE1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E0A51EBF1E7ADF0B002F6DE1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		E0A51E9C1E7AD23C002F6DE1 /* MyWhitehousePetitions */ = {
 			isa = PBXGroup;
 			children = (
+				E0A51EBF1E7ADF0B002F6DE1 /* DetailViewController.swift */,
 				E0A51E9D1E7AD23C002F6DE1 /* AppDelegate.swift */,
 				E0A51E9F1E7AD23C002F6DE1 /* ViewController.swift */,
 				E0A51EA11E7AD23C002F6DE1 /* Main.storyboard */,
@@ -207,6 +210,7 @@
 				E0A51EBE1E7AD642002F6DE1 /* SwiftyJSON.swift in Sources */,
 				E0A51EA01E7AD23C002F6DE1 /* ViewController.swift in Sources */,
 				E0A51E9E1E7AD23C002F6DE1 /* AppDelegate.swift in Sources */,
+				E0A51EC01E7ADF0B002F6DE1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
