@@ -15,8 +15,16 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let urlString: String
         
-        let urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=100"
+        if navigationController?.tabBarItem.tag == 0 {
+            
+            urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=100"
+            
+        } else {
+            
+            urlString = "https://api.whitehouse.gov/v1/petitions.json?signatureCountFloor=10000&limit=100"
+        }
         
         if let url = URL(string: urlString) {
             
@@ -27,9 +35,14 @@ class ViewController: UITableViewController {
                     
                     // we're ok to parse
                     parse(json: json)
+                    
+                    return
+                    
                 }
             }
         }
+        
+        showError()
     }
     
     func parse(json: JSON) {
@@ -45,6 +58,15 @@ class ViewController: UITableViewController {
         }
         
         tableView.reloadData()
+    }
+    
+    func showError() {
+        
+        let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .alert)
+        
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        
+        present(ac, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
