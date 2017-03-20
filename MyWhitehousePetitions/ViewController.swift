@@ -15,6 +15,12 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        performSelector(inBackground: #selector(fetchJSON), with: nil)
+
+    }
+    
+    func fetchJSON() {
+        
         let urlString: String
         
         if navigationController?.tabBarItem.tag == 0 {
@@ -26,23 +32,24 @@ class ViewController: UITableViewController {
             urlString = "https://api.whitehouse.gov/v1/petitions.json?signatureCountFloor=10000&limit=100"
         }
         
-        if let url = URL(string: urlString) {
-            
-            if let data = try? Data(contentsOf: url) {
-                let json = JSON(data: data)
+            if let url = URL(string: urlString) {
                 
-                if json["metadata"]["responseInfo"]["status"].intValue == 200 {
+                if let data = try? Data(contentsOf: url) {
+                    let json = JSON(data: data)
                     
-                    // we're ok to parse
-                    parse(json: json)
-                    
-                    return
-                    
+                    if json["metadata"]["responseInfo"]["status"].intValue == 200 {
+                        
+                        // we're ok to parse
+                        self.parse(json: json)
+                        
+                        return
+                        
+                    }
                 }
             }
-        }
+            
+        performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
         
-        showError()
     }
     
     func parse(json: JSON) {
@@ -57,7 +64,8 @@ class ViewController: UITableViewController {
             petitions.append(obj)
         }
         
-        tableView.reloadData()
+        tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
+        
     }
     
     func showError() {

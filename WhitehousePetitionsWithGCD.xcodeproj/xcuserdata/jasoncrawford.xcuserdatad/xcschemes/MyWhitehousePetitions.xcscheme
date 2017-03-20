@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E0A51E991E7AD23B002F6DE1"
-               BuildableName = "MyWhitehousePetitions.app"
-               BlueprintName = "MyWhitehousePetitions"
-               ReferencedContainer = "container:MyWhitehousePetitions.xcodeproj">
+               BuildableName = "WhitehousePetitionsWithGCD.app"
+               BlueprintName = "WhitehousePetitionsWithGCD"
+               ReferencedContainer = "container:WhitehousePetitionsWithGCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E0A51EAD1E7AD23C002F6DE1"
-               BuildableName = "MyWhitehousePetitionsTests.xctest"
-               BlueprintName = "MyWhitehousePetitionsTests"
-               ReferencedContainer = "container:MyWhitehousePetitions.xcodeproj">
+               BuildableName = "WhitehousePetitionsWithGCDTests.xctest"
+               BlueprintName = "WhitehousePetitionsWithGCDTests"
+               ReferencedContainer = "container:WhitehousePetitionsWithGCD.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E0A51E991E7AD23B002F6DE1"
-            BuildableName = "MyWhitehousePetitions.app"
-            BlueprintName = "MyWhitehousePetitions"
-            ReferencedContainer = "container:MyWhitehousePetitions.xcodeproj">
+            BuildableName = "WhitehousePetitionsWithGCD.app"
+            BlueprintName = "WhitehousePetitionsWithGCD"
+            ReferencedContainer = "container:WhitehousePetitionsWithGCD.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E0A51E991E7AD23B002F6DE1"
-            BuildableName = "MyWhitehousePetitions.app"
-            BlueprintName = "MyWhitehousePetitions"
-            ReferencedContainer = "container:MyWhitehousePetitions.xcodeproj">
+            BuildableName = "WhitehousePetitionsWithGCD.app"
+            BlueprintName = "WhitehousePetitionsWithGCD"
+            ReferencedContainer = "container:WhitehousePetitionsWithGCD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E0A51E991E7AD23B002F6DE1"
-            BuildableName = "MyWhitehousePetitions.app"
-            BlueprintName = "MyWhitehousePetitions"
-            ReferencedContainer = "container:MyWhitehousePetitions.xcodeproj">
+            BuildableName = "WhitehousePetitionsWithGCD.app"
+            BlueprintName = "WhitehousePetitionsWithGCD"
+            ReferencedContainer = "container:WhitehousePetitionsWithGCD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
